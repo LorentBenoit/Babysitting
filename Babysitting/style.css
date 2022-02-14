@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: antiquewhite;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    border-bottom: 5px solid rgb(223, 114, 12);
+    
+}
+
+nav h1{
+    color: rgb(223, 114, 12);
+    font-family: 'Nunito';
+    font-size: 40px;
+}
+
+nav .onglets{
+    margin-left: 200px;
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color: rgb(223, 114, 12);
+    margin-right: 20px;
+    font-size: 20px;
+    
+    border-bottom: 1px solid rgb(223, 114, 12);
+    padding-bottom: 0px;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://www.bfly.ca/wp-content/uploads/2018/11/groupe-enfants.jpg');
+    background-size: cover;
+    padding: 40px;
+    color: rgb(223, 114, 12);
+    font-family: 'Nunito';
+}
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nunito';
+}
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.main .content .card .left{
+   flex: 0 0 30%;
+   padding: 20px;
+   background-color:rgb(221, 135, 55);
+   color:#fff;
+}
+.main .content .card .right img{
+    height:300px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid rgb(223, 114, 12);
+    padding: 30px;
+    color: rgb(223, 114, 12);
+    font-family: 'Nunito';
+    font-size: 16px;
+}
+
+@media screen and (max-width:680px){
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .card {
+        margin: 10px;
+    }
+    .main .content .card .right img{
+        height:200px;
+        width: 100%;
+        margin-top: -0px;
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+    }
+}
